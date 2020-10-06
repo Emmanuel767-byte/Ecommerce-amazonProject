@@ -1,0 +1,69 @@
+.login_logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+html >body{
+    background-color: rgb(230, 219, 219);
+    }
+
+.login_pg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+}
+
+.login_cntnr{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    background-color: white;
+}
+
+.login_cntnr>strong{
+    margin-bottom: 20px;
+}
+
+.login_cntnr>form>h5{
+    margin-bottom: 5px;
+}
+
+.login_Sign-in-btn
+{
+    cursor: pointer;
+    background-color: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+
+}
+
+.login_Create_account-btn{
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+.login_cntnr>p{
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.login_cntnr>form>input{
+    height: 30px;
+    margin-bottom: 10px;
+    width: 98%;
+    
+}

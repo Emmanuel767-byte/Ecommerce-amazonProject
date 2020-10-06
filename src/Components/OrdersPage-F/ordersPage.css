@@ -1,0 +1,19 @@
+.ordersPg{
+    padding: 20px 80px;
+}
+.ordersPg_list{
+    margin: 30px 0px;
+}
+
+.ordersPg>h1{
+    margin: 30px 0;
+}
+.login_logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+
+}
