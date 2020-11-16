@@ -21,8 +21,9 @@
    
   .header_searchIcon{
     padding: 5px;
-    height: 22px !important;
+    height: 100% !important;
     background-color: #CD9042;
+    margin-left:5px !important;
   }
 
   .header_search{
@@ -36,9 +37,10 @@
     height: 12px;
     padding: 10px;
     border: none;
-    width: 100%;
+    width: 90%;
+  
   }
-  .header_nav{display: flex; justify-content: space-evenly;}
+  .header_nav{display: flex; justify-content: space-evenly; margin-right: 12px;}
 
   .header_option{
     display: flex;
