@@ -45,3 +45,17 @@ flex:0.8; /*80%*/
 .payments_title{
 flex:0.2;/*20%*/
 }
+
+@media screen and (max-width: 668px){
+    .payments_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .payments_title{
+        margin-bottom: 5px;
+    }
+    .ayments_priceCntnr{
+        display: block;
+        justify-content: space-around;
+    }
+}

@@ -26,7 +26,7 @@ function OrdersPage() {
     return (
         <div className="ordersPg">
              <Link to="/">
-            <img className="login_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"/>
+            <img alt="" className="login_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"/>
             </Link>
            <h1>Your Orders</h1>
            <div className="ordersPg_list">

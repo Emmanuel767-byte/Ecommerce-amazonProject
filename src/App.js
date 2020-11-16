@@ -11,13 +11,14 @@ import {auth} from './firebase';
 import {useStateValue} from './StateProvider';
 import {Elements} from "@stripe/react-stripe-js";
 import {loadStripe} from "@stripe/stripe-js";
+import {SliderProducts} from './Components/SliderProducts';
 
 //loads stripe up and installs it as a var/const
 const Stripe_promise= loadStripe('pk_test_51HW1tLDfSH9fb1l5foD7Ubc4rqze5dHqdt7DaPpSoi1rPhBqQ4RQMF1cyRrRXCNqZJidRH5p1xplhcqv08fzqtdd003C0ZoP1l');
 
 function App() {
   //this is used to trigger actions between compononets {const [{}, dispatch] = useStateValue();}
-  const [{}, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
 
 
   useEffect(()=>{
@@ -45,6 +46,7 @@ function App() {
     <Router>
       {/* Header */}
       <div className="App">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
       {/*Different ways of using <Route/> or <Route></Route>*/}
       <Switch>
         <Route path="/orders" exact component={OrdersPage}/>
@@ -65,7 +67,9 @@ function App() {
         </Route>     
         <> {/*Home Page*/}
         <Header/>
-        <Route path="/" exact component={Home}/>
+        <Route path="/">
+          <Home data={SliderProducts}/>
+        </Route>
         </>
       </Switch>
       </div>

@@ -9,24 +9,245 @@
 .home{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin-left: 120px;
-    margin-right: 120px;
-    max-width: 1500px;
+    justify-content: center;
+    align-content:center;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* max-width: 1500px; */
+    width: 100%;
 }
+div.home_container{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/*  <---- SLIDER CAROUSEL Styles --->  */
+.page-slider .slider-title{
+    text-align: center;
+    margin: 15px auto;
+    color: white;
+ font-family: 'MuseoModerno', cursive;
+ background-color: teal;
+ border-radius: 16px;
+}
+.slider{
+   
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: black;
+}
+/* .next-slick-arrow,
+.prev-slick-arrow {
+
+}
+.slick-prev{
+
+}
+.slick-next{
+
+} */
+button.slick-arrow.slick-prev{
+    margin-right: 5px;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: chartreuse !important;
+   font-size: 1.5rem;
+  
+   
+   
+}
+.page-slider{
+    
+    display: block;
+    align-items: center;
+    justify-items: center; 
+}
+
+/*
+.page-slider{
+    height: fit-content;
+    overflow: hidden;  
+}
+.slider{
+  
+    height:fit-content;
+    flex-direction: row;
+    padding:10px;
+    
+    
+    display: flex;
+    box-shadow: 1rem 1rem 1rem -2rem #a0a0a0 ;
+    border-radius: 7px;
+    background-color: black;
+ } */
+
+
+
+
+
+
 
 .home_row{
     display: flex;
+    align-self: center;
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
 }
 .home_row_cntnr{
-    margin-top: -155px;
+    margin-top: -75px;
 }
 
-.lg-product{
+#lg-product{
     width: 100%!important;
-    max-height: 230px !important;
+    max-height: 350px !important;
     
+}
+
+@media screen and (max-width: 1080px) and (min-width: 662px) {
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        
+        max-width: 100%;  
+       
+    }
+    .page-slider{
+        display: block;
+        align-self: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .home_row{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: inherit;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: -moz-fit-content;
+        height: fit-content;
+        justify-content: space-evenly;
+        z-index: 1;
+    }
+    div.home_container{
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+    
+    .slider{
+        width: 95%;
+    }
+    .home_row_cntnr{
+        margin-top: 40px;
+    }
+    .page-slider>.slider-title{
+        display: block;
+        align-self: center;
+        margin-left: 5%;
+    }
+
+    .home_image{
+       display: none;
+    }
+   
+    #lg-product{
+    max-height: 350px;
+    max-width:630px;
+    
+    min-width: 420px;
+    width: 100%;
+    
+}
+#lg-product-img{
+    width: 100%;
+    height: 200px;
+}
+/* @media screen and (max-width: 661px) and (min-width: 414px){
+
+}
+ */
+
+
+}
+
+@media screen and (max-width: 661px) and (min-width: 370px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;  
+        margin-left: 0px !important;
+        margin-right: 0px !important;   
+    }
+    .page-slider{
+        display: block;
+        align-self: center;
+        justify-items: center;
+        max-width: 78%;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+       height: fit-content;
+    }
+    .slider{
+        width: 100%;
+        height: fit-content;
+        margin-left: 9px !important;
+        margin-right: 20px !important;
+    }
+    .home_row{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: inherit;
+        margin-right: 5px;
+        margin-left: 5px;
+        height: -moz-fit-content;
+        height: fit-content;
+        justify-content: space-evenly;
+        z-index: 1;
+    }
+    div.home_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        justify-content: center !important;
+        
+        
+    }
+    
+    
+    .page-slider>.slider-title{
+        display: block;
+        align-self: center;
+        margin-left: 5%;
+    }
+    .home_image{ 
+        display: none;
+    }
+    .home_row_cntnr{
+        margin-top: 13px;
+    }
+    #lg-product{
+    max-height: 300px;
+    height: 100%;
+    min-width:400px;
+   max-width: 630px;
+   width: 100%;  
+}
+#lg-product-img{
+    
+    height: 200px;
+    width: 100% ;
+} 
+.slider{
+    overflow: hidden;
+}
 }

@@ -6,25 +6,75 @@
     margin: 10px;
     padding: 20px;
     width: 100%;
-    min-width: 100px;
+    min-width: 150px;
     max-height: 400px;
     background-color: white;
     z-index: 1;
 }
-.product_price{
-    margin-top: 5px;
+.product_price,
+.slider-Product1>.product_price{
+    margin-top: 3px;
 }
-
-.product_info{
-    height: 100px;
-    margin-bottom: 15px;
+.slider-Product>.product_info>p,.product_price>P{
+    /* color: rgb(79, 207, 20); */
+    color: white;
 }
-.product>img {
-    max-height:  200px;
+.slider-Product{
+    background-color: #a665ad;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
     width: 100%;
+    max-width: 180px!important; 
+    
+    height: 300px!important;
+    margin-right: 10px !important;
+    box-shadow: 1rem 1rem 1rem -2rem #a0a0a0 ;
+    border-radius: 5px;
+}
+.product_info{
+    font-size: 1.1rem;
+    height: 70px;
+    margin-bottom: 15px;
+    font-family: 'MuseoModerno', cursive;
+}
+.slider-Product>button{
+    padding: 5px;
+    width: 100%;
+    height: 25px !important;
+    
+}
+.slider-Product>.product_info{
+    font-size: 16px !important;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    height: 80px!important;
+    margin-top: 0 !important;
+    background-color: rgb(8, 8, 8);
+    margin-left: 10px;
+    width: 100%;
+    font-family: 'MuseoModerno', cursive;
+}
+.product>img{
+    height:  200px;
+    width: 100%;
+    
     object-fit: contain;
     margin-bottom: 15px; /*Or 100%*/
 }
+.slider-Product>img{
+    width: 100% !important;
+   height: 160px !important;
+   margin-top: 8px;
+   object-fit: unset;
+ 
+   
+    
+}
+
 .product>button{
     cursor: pointer;
     padding: 2px;
@@ -35,6 +85,138 @@
     border-color: #a88734 #9c7e31 #846a29;
 }
 
-.product_rating{
+.product_rating,
+.slider-Product>.product_rating{
     display: flex;
+}
+
+/* <------------------- TABLET SCREEN SIZE  ---------------------> */
+@media screen and (max-width: 1080px) and (min-width: 662px){
+       div.product{
+           max-height: 200px;
+           min-width: 170px;
+           width: 100%;
+           padding: 8px;
+       }
+.product>button{
+    margin-top: 4px;
+}
+
+svg.MuiSvgIcon-root{
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    
+    display: flex;
+    align-self: center !important;
+    
+
+}
+.slider-Product>.product_info{
+    display:block;
+    align-content: center;
+    justify-content: center;
+    font-size: 14px;
+        height: 68px;
+        width: 100%;
+      
+      margin-bottom: 5px;
+
+}
+.slider .slider-Product{
+    padding: 4px;
+    
+    width: 150px!important;
+    margin-right: 10px;
+    height: 200px;
+}
+.slider-Product>img{
+    object-fit: unset;
+    width: 100%;
+    height: 90px !important;
+    
+}
+       .product>img{
+           margin-top: 3px;
+            height: 100px;
+            width: 100%;
+       }
+       
+       .product_info{
+        font-size: 14px;
+        height: 60px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 0px !important;
+
+       }
+       .slider-Product>button{
+        font-size: 12px;
+        padding: 5px;
+       
+
+    }
+       
+
+}
+/* <-------------- CELL PHONES SCREEN SIZE  ----------------> */
+@media screen and (max-width: 660px) and (min-width: 370px){
+    .product{
+        
+        max-height: 170px !important;
+        min-width: 100px;
+        
+        
+        padding: 0px;
+    }
+    .slider-Product>button{
+        font-size: 12px;
+        
+    }
+.product>button{
+    margin-top: -6px;
+ margin-bottom: 6px;
+ 
+}
+
+
+.slider >.slider-Product{
+    padding: 4px;
+    width: 100%;
+    min-width: 100px !important;
+    
+    overflow: hidden;
+    height: 180px!important;
+}
+svg.MuiSvgIcon-root{
+ font-size: 0.7rem;
+ margin-bottom: 2px;
+ align-self: center !important;
+}
+.slider-Product>img{
+    margin-top: 5px;
+    object-fit: scale-down;
+    object-position: center;
+    height:60px !important;
+    width: 90% !important;
+   
+}
+.slider-Product>button{
+    margin-top: -6px;
+}
+
+    .product>img{
+        margin-top: 12px;
+         height: 60px;
+         width: 90%;
+    }
+    .slider-Product>.product_info,.product_info{
+     font-size: 12px;
+     width: 100%;
+     height: 50px;
+   margin-top: 3px;
+   margin-bottom: 3px;
+
+    }
+  
+
 }
