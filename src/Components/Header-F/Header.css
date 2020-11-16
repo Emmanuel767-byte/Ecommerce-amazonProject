@@ -69,10 +69,10 @@
   @media screen and (max-width:668px) {
   
   a#header_logo{
-    width: 90px;
+    width: 120px;
   }
   img.header_logo{
-    width: 65px;
+    width: 90px;
   }
  
   .header_nav {
@@ -104,8 +104,8 @@
 
   .header_search{
     display: flex;
-    flex: 0.7;
-    margin-right: -55px;
+    flex: 0.8;
+    margin-right: -30px;
   }
    #nav-check:not(:checked) ~ .header_nav {
     height: 0px;
