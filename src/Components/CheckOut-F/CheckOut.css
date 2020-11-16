@@ -15,7 +15,49 @@
     height: max-content;
 
 }
+.underIMG_checkout{
+    display: none;
+}
 .checkout_title{
 margin-right: 10px;
 border-bottom: 1px solid lightgray;
+}
+
+/* <------------ Tablet Screen Size---------> */
+@media screen and (max-width: 906px) and (min-width: 551px){
+    .checkout{
+        display: flex;
+        flex-direction: column-reverse;   
+        width: fit-content;   
+    }
+    .underIMG_checkout{
+    display: block;
+    height: fit-content;
+    /* width: fit-content; */
+    
+    }
+    .checkout_Right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) and (min-width: 370px){
+
+    .checkout{
+        display: flex;
+        flex-direction: column-reverse;   
+        width: fit-content;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .underIMG_checkout{
+        display: block;
+        height: fit-content;
+        width: fit-content;
+        }
+        .checkout_Right{
+            display: none;
+        }
+
+
 }

@@ -14,6 +14,9 @@ function CheckOut() {
         <div className="checkout">
             <div className="checkout_Left">
                 <img src={Amazon_ad2_sqooshed} alt="" className="checkout_ad"/>
+                <div className="underIMG_checkout">
+                    <Subtotal/>
+                </div>
                 <div className="checkout_title"></div>
                 <h2>{user?.email}</h2>
                 <h2>Your Shopping Basket</h2>
