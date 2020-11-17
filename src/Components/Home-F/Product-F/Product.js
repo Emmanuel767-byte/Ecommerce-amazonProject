@@ -25,7 +25,7 @@ function Product({id, title, price, img, rating ,lg, slider, info}) {
     return (
         <div id={`${lg &&  'lg-product'}`} className={`product ${slider && 'slider-Product'}`}>
             <div className={`product_info ${info && 'slider-info'}`}>
-                    <p>{title}</p>
+                    <p className="product_title">{title}</p>
                 <p className="product_price">
                     <small>$</small>
                     <strong>{price}</strong>

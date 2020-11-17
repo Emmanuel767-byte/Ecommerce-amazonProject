@@ -35,7 +35,7 @@ export const SliderProducts=[
         Sliderimg:"samsung s20.jpg"
     },
     {
-        title: "Sony PS5 Playstation 5",
+        title: "Sony Playstation 5",
         id:"2E3F44",
         price: 650.99,
         rating: 5,

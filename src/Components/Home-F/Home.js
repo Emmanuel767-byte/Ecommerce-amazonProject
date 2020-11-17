@@ -31,7 +31,7 @@ function Home({data}) {
 
         infinite: true,
         arrows: true,
-        speed: 500,
+        speed: 2000,
         slidesToShow: 4,
         slidesToScroll: 2,
         initialSlide: 0,
@@ -76,9 +76,18 @@ function Home({data}) {
             }
           },
           {
-            breakpoint: 400,
+            breakpoint: 419,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              initialSlide: 1,
+              arrows: true,
+            }
+          },
+          {
+            breakpoint: 380,
+            settings: {
+              slidesToShow: 2,
               slidesToScroll: 1,
               initialSlide: 1,
               arrows: true,

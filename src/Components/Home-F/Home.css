@@ -63,7 +63,9 @@ button.slick-arrow.slick-prev{
     align-items: center;
     justify-items: center; 
 }
-
+.slider{
+    overflow: visible;
+}
 /*
 .page-slider{
     height: fit-content;
@@ -195,11 +197,21 @@ button.slick-arrow.slick-prev{
        height: fit-content;
     }
     .slider{
+        
+       
         width: 100%;
-        height: fit-content;
+        height: min-content;
         margin-left: 9px !important;
         margin-right: 20px !important;
     }
+    /* .slick-arrow.slick-prev,
+    .slick-arrow.slick-next, */
+  .slick-next:before,
+  .slick-prev:before{
+        font-size: 21px !important;
+    }
+
+   
     .home_row{
         
         display: flex;
@@ -247,7 +259,5 @@ button.slick-arrow.slick-prev{
     height: 200px;
     width: 100% ;
 } 
-.slider{
-    overflow: hidden;
-}
+
 }

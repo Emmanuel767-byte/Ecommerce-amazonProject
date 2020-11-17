@@ -21,7 +21,8 @@
     color: white;
 }
 .slider-Product{
-    background-color: #a665ad;
+    /* background-color: #a665ad; */
+    background-color: rgb(209, 149, 216);
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -48,9 +49,14 @@
 .slider-Product>button{
     padding: 5px;
     width: 100%;
-    
+    /* rgb(72, 196, 15) */
+    background-color: #008080 !important;
     height: 25px !important;
-    
+color: #fff !important;
+border-color:  #008080;
+}
+.slider-Product>button:hover{
+    color: rgb(8,8,8);
 }
 .slider-Product>.product_info{
     font-size: 16px !important;
@@ -61,7 +67,7 @@
     align-items: center;
     height: 80px!important;
     margin-top: 0 !important;
-    background-color: rgb(8, 8, 8);
+    background-color: #080808;
     margin-left: 0px ;
     width: 100%;
     font-family: 'MuseoModerno', cursive;
@@ -107,7 +113,7 @@
            padding: 8px;
        }
 .product>button{
-    margin-top: 4px;
+    margin-top: -7px;
 }
 
 svg.MuiSvgIcon-root{
@@ -156,7 +162,7 @@ svg.MuiSvgIcon-root{
         align-self: center;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 12px;
         height: 60px;
       margin-top: 5px;
       margin-bottom: 5px;
@@ -203,7 +209,7 @@ svg.MuiSvgIcon-root{
     height: 180px!important;
 }
 svg.MuiSvgIcon-root{
- font-size: 0.9rem;
+ font-size: 0.8rem;
  margin-bottom: 2px;
  /* align-self: center !important;
  justify-self: center; */
@@ -230,7 +236,7 @@ svg.MuiSvgIcon-root{
         align-self: center;
         justify-content: center;
         align-items: center;
-     font-size: 12px;
+     font-size: 0.66rem;
      width: 100%;
      height: 50px;
    margin-top: 3px;
