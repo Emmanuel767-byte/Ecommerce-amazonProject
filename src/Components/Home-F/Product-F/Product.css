@@ -53,7 +53,7 @@
     background-color: #008080 !important;
     height: 25px !important;
 color: #fff !important;
-border-color:  #008080;
+border-color:  #008080 !important;
 }
 .slider-Product>button:hover{
     color: rgb(8,8,8);

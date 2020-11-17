@@ -28,11 +28,14 @@ border-bottom: 1px solid lightgray;
     .checkout{
         display: flex;
         flex-direction: column-reverse;   
-        width: fit-content;   
+        width: fit-content; 
+        margin-left:60px;
+        margin-right: 60px;  
     }
     .underIMG_checkout{
     display: block;
     height: fit-content;
+    margin-left: 10% !important
     /* width: fit-content; */
     
     }
@@ -46,12 +49,17 @@ border-bottom: 1px solid lightgray;
     .checkout{
         display: flex;
         flex-direction: column-reverse;   
+        justify-content: center;
+        
         width: fit-content;
         margin-left: 0px;
         margin-right: 0px;
     }
     .underIMG_checkout{
         display: block;
+        margin-left: 20% !important;
+        
+        align-self: center !important;
         height: fit-content;
         width: fit-content;
         }
