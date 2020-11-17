@@ -169,7 +169,7 @@ function Home({data}) {
                        <Product
                             lg
                             id="526df95"
-                            title ="Gaming Consoles"
+                            title ="Samsung Galaxy S20 Plus Ultra"
                             price={699.99}
                             img="https://i.ytimg.com/vi/G0Y9bZ2ShN8/maxresdefault.jpg"
                             rating={5}/>
@@ -190,7 +190,7 @@ function Home({data}) {
                             img="https://dealdaddy.shop/wp-content/uploads/Xiaomi-RedmiBook-14inch-Laptop-Cyber-Monday-Best-Deals-2020.jpg"/>
                             <Product
                             price={45}
-                            title="Chardanae poison"
+                            title="Chardanae Poison"
                             rating={5}
                             id="4fsf6v"
                             img="https://images.gulfnews.com/201903/perfume%20shumukh_resources1.jpg"/>

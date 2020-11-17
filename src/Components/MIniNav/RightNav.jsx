@@ -30,7 +30,7 @@ list-style: none;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
-    height: 100vh;
+    height: fit-content;
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
@@ -46,7 +46,7 @@ const RightNav = ({ open }) => {
       <Link className="link" to={{/*!user*/} && '/login'}>Sign In</Link>
       <Link className="link" to="/orders"  >Your Orders </Link>
       <Link className="link" to="/checkout" >Check Out</Link>
-      <Link className="link" href="#">Nav2</Link>
+      
     </Ul>
   )
 }

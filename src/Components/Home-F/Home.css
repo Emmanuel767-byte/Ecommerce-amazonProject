@@ -98,13 +98,19 @@ button.slick-arrow.slick-prev{
     margin-right: 5px;
 }
 .home_row_cntnr{
-    margin-top: -75px;
+    margin-top: -185px;
 }
 
 #lg-product{
     width: 100%!important;
-    max-height: 350px !important;
+    max-height: 450px !important;
     
+}
+#lg-product-img{
+    width: 100% !important;
+    object-fit: fill;
+    
+    height: 300px !important;
 }
 
 @media screen and (max-width: 1080px) and (min-width: 662px) {
@@ -167,7 +173,7 @@ button.slick-arrow.slick-prev{
     
 }
 #lg-product-img{
-    width: 100%;
+    width: 100% !important;
     height: 200px;
 }
 /* @media screen and (max-width: 661px) and (min-width: 414px){
