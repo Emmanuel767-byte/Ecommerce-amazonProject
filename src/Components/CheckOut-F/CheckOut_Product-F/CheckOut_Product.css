@@ -27,3 +27,14 @@ padding-left: 20px;
     width: 180px;
     height: 180px;
 }
+@media screen and (max-width: 489px){
+    .checkoutProduct_img{
+        width: 140px !important;
+
+    }
+    
+
+
+
+
+}

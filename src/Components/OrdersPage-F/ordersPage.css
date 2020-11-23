@@ -6,14 +6,23 @@
 }
 
 .ordersPg>h1{
-    margin: 30px 0;
+    margin: 0px 0px;
 }
 .login_logo{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
     width: 100px;
     object-fit: contain;
     margin-left: auto;
     margin-right: auto;
 
+}
+@media screen and (max-width: 820px){
+    .ordersPg{
+    padding: 20px 40px !important;
+    }
+    
+    .order_id{
+        top: 10px !important;
+    }
 }

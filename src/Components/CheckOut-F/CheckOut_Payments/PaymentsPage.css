@@ -46,7 +46,7 @@ flex:0.8; /*80%*/
 flex:0.2;/*20%*/
 }
 
-@media screen and (max-width: 668px){
+@media screen and (max-width: 768px){
     .payments_section{
         display: flex;
         flex-direction: column;

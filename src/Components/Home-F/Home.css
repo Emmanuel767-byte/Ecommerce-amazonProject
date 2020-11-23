@@ -17,8 +17,8 @@
     width: 100%;
 }
 div.home_container{
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 /*  <---- SLIDER CAROUSEL Styles --->  */
@@ -50,8 +50,9 @@ button.slick-arrow.slick-prev{
     margin-right: 5px;
 }
 
-.slick-prev:before, .slick-next:before{
-    color: chartreuse !important;
+.slick-prev::before, .slick-next::before{
+
+    color:rgb(8, 8, 8) !important;
    font-size: 1.5rem;
   
    
@@ -113,7 +114,7 @@ button.slick-arrow.slick-prev{
     height: 300px !important;
 }
 
-@media screen and (max-width: 1080px) and (min-width: 662px) {
+@media screen and (max-width: 1266px) and (min-width: 769px) {
 
     .home{
         display: flex;
@@ -184,7 +185,7 @@ button.slick-arrow.slick-prev{
 
 }
 
-@media screen and (max-width: 661px) and (min-width: 370px){
+@media screen and (max-width: 768px) and (min-width: 320px){
     .home{
         display: flex;
         flex-direction: column;

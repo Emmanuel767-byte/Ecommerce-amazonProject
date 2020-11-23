@@ -10,7 +10,7 @@ function Order({order}) {
          <h2>Order</h2>  
             {moment.unix(order.data.created).format("MMMM Do YYYY, h:mma")}        
             <p className="order_id">
-                <small>{order.id}</small>
+                <small>Order ID : {order.id}</small>
             </p>
             {order.data.basket?.map(item=>(
               <CheckOut_Product

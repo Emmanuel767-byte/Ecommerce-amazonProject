@@ -31,7 +31,7 @@ function Home({data}) {
 
         infinite: true,
         arrows: true,
-        speed: 2000,
+        speed: 500,
         slidesToShow: 4,
         slidesToScroll: 2,
         initialSlide: 0,
@@ -48,11 +48,11 @@ function Home({data}) {
             }
           },
           {
-            breakpoint: 1024,
+            breakpoint: 1010,
             settings: {
-              slidesToShow: 4,
-              slidesToScroll: 3,
-              initialSlide: 1,
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              initialSlide: 2,
               dots: false,
               arrows: true,
             }
@@ -69,14 +69,14 @@ function Home({data}) {
           {
             breakpoint: 660,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               slidesToScroll: 2,
               initialSlide: 2,
               arrows: true,
             }
           },
           {
-            breakpoint: 419,
+            breakpoint: 430,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -85,9 +85,9 @@ function Home({data}) {
             }
           },
           {
-            breakpoint: 380,
+            breakpoint: 350,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
               initialSlide: 1,
               arrows: true,

@@ -19,7 +19,6 @@
     display: none;
 }
 .checkout_title{
-margin-right: 10px;
 border-bottom: 1px solid lightgray;
 }
 
@@ -57,7 +56,7 @@ border-bottom: 1px solid lightgray;
     }
     .underIMG_checkout{
         display: block;
-        margin-left: 20% !important;
+        
         
         align-self: center !important;
         height: fit-content;

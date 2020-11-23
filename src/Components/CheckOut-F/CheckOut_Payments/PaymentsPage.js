@@ -37,7 +37,7 @@ function PaymentsPage() {
     Get_ClientSecret()
     }, [basket])
 
-    console.log("the secret it>>>", clientSecret)
+    
 
     const handleSubmit= async (e)=>{
         //Do STRIPE stuff
@@ -79,6 +79,7 @@ function PaymentsPage() {
        //if event (e) is empty disable it if theres an error show the error
         setDisabled(e.empty);
         setError(e.error ? e.error.message: "");
+       
 
     }
     return (
@@ -139,12 +140,15 @@ function PaymentsPage() {
                                 prefix={"$"}
                                 />
                                 {/* */}
-                                <button disabled={processing || disabled || succeeded}>
+                                <button style={{cursor:"pointer"}} disabled={processing || disabled || succeeded}>
                                     {/* span is saying if (?) its {processing} show processing , otherwise (:) show Buy Now */}
                                 <span>{processing ? <p>Processing</p>: <p>Buy Now</p>}</span>
                                     </button> 
+
                             </div>
                                 {error && <div>{error}</div>}
+                                <div className="">                                    <h1 style={{fontSize:'1em'}}> Demo Payment</h1>
+                                    <span style={{fontSize:'0.8em'}}>Demo Card #= 4242 4242 4242 4242.  Use any future date.</span></div>
                         </form>
                     </div>
                 </div>

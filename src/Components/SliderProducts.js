@@ -16,7 +16,7 @@ export const SliderProducts=[
     {
         title: "Camouflage Hoody",
         id:"1GH34B",
-        price: 5,
+        price: 50,
         rating: 5,
         Sliderimg:"red hood.jpg"
     },
