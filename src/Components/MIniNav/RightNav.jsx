@@ -51,12 +51,12 @@ const RightNav = ({ open }) => {
   const [{basket, user}] = useStateValue()
   return (
     <Ul open={open}>
-      <Link className="link" to={{/*!user*/} && '/login'}>Sign In</Link>
+      <Link className="link" to={!user && '/login'}>{user ? 'Sign Out': 'Sign In'}</Link>
       <Link className="link" to="/orders"  >Your Orders </Link>
-      <Link className="link" to="/checkout" >Check Out</Link>
+      
       <Link className="link" to="/checkout">  
                      <ShoppingBasketIcon className="Cart"/>
-                    <span className="Count">{basket?.length}</span>
+                    <span className="Count">Check Out {basket?.length}</span>
   
                 </Link>
     </Ul>
